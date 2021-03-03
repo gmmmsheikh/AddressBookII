@@ -1,5 +1,5 @@
 
-public class Contact {
+public class Contact implements Comparable<Contact> {
 	private String firstName;
 	private String lastName;
 	private String address;
@@ -63,17 +63,17 @@ public class Contact {
             return false;
         }
     }
-	//@Override
-	/*
-    public int comparer(Object obj) impComparator<Contact>{
+	@Override
+    public int compareTo(Contact obj) {
 		Contact otherContact = (Contact) obj;
         if(firstName.equalsIgnoreCase(otherContact.firstName)) {
             return lastName.compareToIgnoreCase(otherContact.lastName);
         } else {
             return firstName.compareToIgnoreCase(otherContact.firstName);
         }
-    }*/
-	
+    }
+
+
 	
 	
 }
