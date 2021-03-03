@@ -152,7 +152,7 @@ public class AddressBook {
 					System.out.println("Please enter the LAST name of the person you would like to find");
 					String lnSearch = sc.nextLine();
 					for(Contact c : addressBook) {
-						if(c.getFirstName().equalsIgnoreCase(lnSearch)) {
+						if(c.getLastName().equalsIgnoreCase(lnSearch)) {
 							index = addressBook.indexOf(c);
 							c.toString();
 							break;
